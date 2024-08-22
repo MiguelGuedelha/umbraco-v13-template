@@ -3,6 +3,7 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" />
     <PackageReference Include="Umbraco.Cms"/>
+    <PackageReference Include="uSync" />
   </ItemGroup>
 
   <ItemGroup>
