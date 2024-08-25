@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Site Settings</summary>
 	[PublishedModel("siteSettings")]
-	public partial class SiteSettings : PublishedContentModel, IFooter, IHeader
+	public partial class SiteSettings : PublishedContentModel, IFooter, IHeader, IPageSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -136,5 +136,20 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("title")]
 		public virtual string Title => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Header.GetTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Navigation title: Custom navigation title (default - page title)
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("navigationTitle")]
+		public virtual string NavigationTitle => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetNavigationTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Show In Navigation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[ImplementPropertyType("showInNavigation")]
+		public virtual bool ShowInNavigation => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetShowInNavigation(this, _publishedValueFallback);
 	}
 }

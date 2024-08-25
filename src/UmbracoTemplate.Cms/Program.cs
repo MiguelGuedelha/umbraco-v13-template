@@ -1,3 +1,5 @@
+using UmbracoTemplate.Cms.Features.Navigation;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
@@ -33,5 +35,9 @@ app.UseUmbraco()
     });
 
 app.MapDefaultEndpoints();
+
+//Custom endpoints
+var apiGroup = app.MapGroup("api");
+apiGroup.MapNavigationEndpoints();
 
 await app.RunAsync();
