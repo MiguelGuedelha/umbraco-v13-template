@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Text With Image</summary>
 	[PublishedModel("textWithImage")]
-	public partial class TextWithImage : PublishedElementModel
+	public partial class TextWithImage : PublishedContentModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -41,7 +41,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public TextWithImage(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
+		public TextWithImage(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;
@@ -55,7 +55,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("cta")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListItem<global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Cta> Cta => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListItem<global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Cta>>(_publishedValueFallback, "cta");
+		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent Cta => this.Value<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>(_publishedValueFallback, "cta");
 
 		///<summary>
 		/// Image
@@ -63,7 +63,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("image")]
-		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue Image => this.Value<global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue>(_publishedValueFallback, "image");
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Image => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "image");
 
 		///<summary>
 		/// Image Alignment

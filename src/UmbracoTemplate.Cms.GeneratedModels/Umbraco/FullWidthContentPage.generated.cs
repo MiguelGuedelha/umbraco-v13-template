@@ -18,14 +18,14 @@ using Umbraco.Extensions;
 
 namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
-	/// <summary>Site Settings</summary>
-	[PublishedModel("siteSettings")]
-	public partial class SiteSettings : PublishedContentModel, IFooter, IHeader, IPageSettings
+	/// <summary>Full Width Content Page</summary>
+	[PublishedModel("fullWidthContentPage")]
+	public partial class FullWidthContentPage : PublishedContentModel, IPageSettings, ISeo
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		public new const string ModelTypeAlias = "siteSettings";
+		public new const string ModelTypeAlias = "fullWidthContentPage";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
@@ -34,14 +34,14 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 			=> PublishedModelUtility.GetModelContentType(publishedSnapshotAccessor, ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(IPublishedSnapshotAccessor publishedSnapshotAccessor, Expression<Func<SiteSettings, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(IPublishedSnapshotAccessor publishedSnapshotAccessor, Expression<Func<FullWidthContentPage, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(publishedSnapshotAccessor), selector);
 #pragma warning restore 0109
 
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public SiteSettings(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public FullWidthContentPage(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;
@@ -50,92 +50,12 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		// properties
 
 		///<summary>
-		/// Call To Action Text
+		/// Components
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("callToActionText")]
-		public virtual string CallToActionText => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetCallToActionText(this, _publishedValueFallback);
-
-		///<summary>
-		/// Email
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("email")]
-		public virtual string Email => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetEmail(this, _publishedValueFallback);
-
-		///<summary>
-		/// Logo
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("footerLogo")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FooterLogo => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetFooterLogo(this, _publishedValueFallback);
-
-		///<summary>
-		/// Internal Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("internalLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> InternalLinks => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetInternalLinks(this, _publishedValueFallback);
-
-		///<summary>
-		/// Legal Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("legalLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> LegalLinks => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetLegalLinks(this, _publishedValueFallback);
-
-		///<summary>
-		/// Phone Number
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("phoneNumber")]
-		public virtual string PhoneNumber => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetPhoneNumber(this, _publishedValueFallback);
-
-		///<summary>
-		/// Social Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("socialLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent> SocialLinks => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Footer.GetSocialLinks(this, _publishedValueFallback);
-
-		///<summary>
-		/// Contact Us Text
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("contactUsText")]
-		public virtual string ContactUsText => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Header.GetContactUsText(this, _publishedValueFallback);
-
-		///<summary>
-		/// Logo
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("headerLogo")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderLogo => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Header.GetHeaderLogo(this, _publishedValueFallback);
-
-		///<summary>
-		/// Quick Links
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("quickLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.Link> QuickLinks => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Header.GetQuickLinks(this, _publishedValueFallback);
-
-		///<summary>
-		/// Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("title")]
-		public virtual string Title => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Header.GetTitle(this, _publishedValueFallback);
+		[ImplementPropertyType("components")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent> Components => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>>(_publishedValueFallback, "components");
 
 		///<summary>
 		/// Navigation title: Custom navigation title (default - page title)
@@ -146,10 +66,87 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		public virtual string NavigationTitle => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetNavigationTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// Show Breadcrumbs
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[ImplementPropertyType("showBreadcrumbs")]
+		public virtual bool ShowBreadcrumbs => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetShowBreadcrumbs(this, _publishedValueFallback);
+
+		///<summary>
 		/// Show In Navigation
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[ImplementPropertyType("showInNavigation")]
 		public virtual bool ShowInNavigation => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetShowInNavigation(this, _publishedValueFallback);
+
+		///<summary>
+		/// Follow Links On Page
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[ImplementPropertyType("followLinks")]
+		public virtual bool FollowLinks => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetFollowLinks(this, _publishedValueFallback);
+
+		///<summary>
+		/// Index Page
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[ImplementPropertyType("indexPage")]
+		public virtual bool IndexPage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetIndexPage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("metaDescription")]
+		public virtual string MetaDescription => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetMetaDescription(this, _publishedValueFallback);
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("metaImage")]
+		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue MetaImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetMetaImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("metaTitle")]
+		public virtual string MetaTitle => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetMetaTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("ogDescription")]
+		public virtual string OgDescription => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgDescription(this, _publishedValueFallback);
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("ogImage")]
+		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue OgImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("ogTitle")]
+		public virtual string OgTitle => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Type
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("ogType")]
+		public virtual string OgType => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgType(this, _publishedValueFallback);
 	}
 }
