@@ -38,7 +38,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		/// <summary>Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue MetaImage { get; }
+		global::Umbraco.Cms.Core.Models.MediaWithCrops MetaImage { get; }
 
 		/// <summary>Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
@@ -53,7 +53,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		/// <summary>Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue OgImage { get; }
+		global::Umbraco.Cms.Core.Models.MediaWithCrops OgImage { get; }
 
 		/// <summary>Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
@@ -138,12 +138,12 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("metaImage")]
-		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue MetaImage => GetMetaImage(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops MetaImage => GetMetaImage(this, _publishedValueFallback);
 
 		/// <summary>Static getter for Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue GetMetaImage(ISeo that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue>(publishedValueFallback, "metaImage");
+		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetMetaImage(ISeo that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "metaImage");
 
 		///<summary>
 		/// Title
@@ -177,12 +177,12 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("ogImage")]
-		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue OgImage => GetOgImage(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops OgImage => GetOgImage(this, _publishedValueFallback);
 
 		/// <summary>Static getter for Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue GetOgImage(ISeo that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue>(publishedValueFallback, "ogImage");
+		public static global::Umbraco.Cms.Core.Models.MediaWithCrops GetOgImage(ISeo that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(publishedValueFallback, "ogImage");
 
 		///<summary>
 		/// Title

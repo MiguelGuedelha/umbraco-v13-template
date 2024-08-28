@@ -115,7 +115,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("metaImage")]
-		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue MetaImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetMetaImage(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops MetaImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetMetaImage(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title
@@ -139,7 +139,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("ogImage")]
-		public virtual global::Umbraco.Cms.Core.PropertyEditors.ValueConverters.ImageCropperValue OgImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgImage(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops OgImage => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Seo.GetOgImage(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title
