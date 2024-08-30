@@ -34,6 +34,16 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		/// <summary>Show In Navigation</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		bool ShowInNavigation { get; }
+
+		/// <summary>Friendly URLs</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string UmbracoUrlAlias { get; }
+
+		/// <summary>Main Custom Slug</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string UmbracoUrlName { get; }
 	}
 
 	/// <summary>Page Navigation Settings</summary>
@@ -101,5 +111,31 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		/// <summary>Static getter for Show In Navigation</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		public static bool GetShowInNavigation(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<bool>(publishedValueFallback, "showInNavigation");
+
+		///<summary>
+		/// Friendly URLs: Alternate URLs to navigate to this page, comma separated
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("umbracoUrlAlias")]
+		public virtual string UmbracoUrlAlias => GetUmbracoUrlAlias(this, _publishedValueFallback);
+
+		/// <summary>Static getter for Friendly URLs</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetUmbracoUrlAlias(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "umbracoUrlAlias");
+
+		///<summary>
+		/// Main Custom Slug: Change main page URL, leave empty otherwise
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("umbracoUrlName")]
+		public virtual string UmbracoUrlName => GetUmbracoUrlName(this, _publishedValueFallback);
+
+		/// <summary>Static getter for Main Custom Slug</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetUmbracoUrlName(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "umbracoUrlName");
 	}
 }
