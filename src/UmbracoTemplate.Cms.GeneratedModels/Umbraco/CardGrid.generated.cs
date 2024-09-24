@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Card Grid</summary>
 	[PublishedModel("cardGrid")]
-	public partial class CardGrid : PublishedContentModel
+	public partial class CardGrid : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -41,7 +41,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public CardGrid(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public CardGrid(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;

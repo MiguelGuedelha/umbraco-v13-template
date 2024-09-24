@@ -22,18 +22,9 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 	/// <summary>Page Navigation Settings</summary>
 	public partial interface IPageSettings : IPublishedElement
 	{
-		/// <summary>Navigation title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string NavigationTitle { get; }
-
 		/// <summary>Show Breadcrumbs</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		bool ShowBreadcrumbs { get; }
-
-		/// <summary>Show In Navigation</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		bool ShowInNavigation { get; }
 
 		/// <summary>Friendly URLs</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
@@ -78,19 +69,6 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		// properties
 
 		///<summary>
-		/// Navigation title: Custom navigation title (default - page title)
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("navigationTitle")]
-		public virtual string NavigationTitle => GetNavigationTitle(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Navigation title</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetNavigationTitle(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "navigationTitle");
-
-		///<summary>
 		/// Show Breadcrumbs
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
@@ -100,17 +78,6 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		/// <summary>Static getter for Show Breadcrumbs</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		public static bool GetShowBreadcrumbs(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<bool>(publishedValueFallback, "showBreadcrumbs");
-
-		///<summary>
-		/// Show In Navigation
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[ImplementPropertyType("showInNavigation")]
-		public virtual bool ShowInNavigation => GetShowInNavigation(this, _publishedValueFallback);
-
-		/// <summary>Static getter for Show In Navigation</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		public static bool GetShowInNavigation(IPageSettings that, IPublishedValueFallback publishedValueFallback) => that.Value<bool>(publishedValueFallback, "showInNavigation");
 
 		///<summary>
 		/// Friendly URLs: Alternate URLs to navigate to this page, comma separated

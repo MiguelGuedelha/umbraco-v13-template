@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Card</summary>
 	[PublishedModel("card")]
-	public partial class Card : PublishedContentModel
+	public partial class Card : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -41,7 +41,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public Card(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public Card(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;
@@ -55,7 +55,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("cta")]
-		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent Cta => this.Value<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>(_publishedValueFallback, "cta");
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListItem<global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Cta> Cta => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListItem<global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.Cta>>(_publishedValueFallback, "cta");
 
 		///<summary>
 		/// Text

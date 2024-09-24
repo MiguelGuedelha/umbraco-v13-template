@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Full Width Text</summary>
 	[PublishedModel("fullWidthText")]
-	public partial class FullWidthText : PublishedContentModel
+	public partial class FullWidthText : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -41,7 +41,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public FullWidthText(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public FullWidthText(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;

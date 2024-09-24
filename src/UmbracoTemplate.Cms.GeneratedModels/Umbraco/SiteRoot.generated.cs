@@ -127,7 +127,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("socialLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent> SocialLinks => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>>(_publishedValueFallback, "socialLinks");
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel SocialLinks => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "socialLinks");
 
 		///<summary>
 		/// Title
@@ -146,26 +146,11 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent UmbracoInternalRedirectId => this.Value<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>(_publishedValueFallback, "umbracoInternalRedirectId");
 
 		///<summary>
-		/// Navigation title: Custom navigation title (default - page title)
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("navigationTitle")]
-		public virtual string NavigationTitle => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetNavigationTitle(this, _publishedValueFallback);
-
-		///<summary>
 		/// Show Breadcrumbs
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
 		[ImplementPropertyType("showBreadcrumbs")]
 		public virtual bool ShowBreadcrumbs => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetShowBreadcrumbs(this, _publishedValueFallback);
-
-		///<summary>
-		/// Show In Navigation
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.4.1+d72fc5c")]
-		[ImplementPropertyType("showInNavigation")]
-		public virtual bool ShowInNavigation => global::UmbracoTemplate.Cms.GeneratedModels.Umbraco.PageSettings.GetShowInNavigation(this, _publishedValueFallback);
 
 		///<summary>
 		/// Friendly URLs: Alternate URLs to navigate to this page, comma separated

@@ -20,7 +20,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 {
 	/// <summary>Cta</summary>
 	[PublishedModel("cta")]
-	public partial class Cta : PublishedContentModel
+	public partial class Cta : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -41,7 +41,7 @@ namespace UmbracoTemplate.Cms.GeneratedModels.Umbraco
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public Cta(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public Cta(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;
