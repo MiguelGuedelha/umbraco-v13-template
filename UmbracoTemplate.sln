@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTemplate.ServiceDefa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{0396B6A2-F77A-4A7F-B379-85A57883F172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTemplate.Cms.GeneratedModels", "src\UmbracoTemplate.Cms.GeneratedModels\UmbracoTemplate.Cms.GeneratedModels.csproj", "{3334785E-1EA6-4A7E-980B-C21C0CC7DE40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTemplate.Shared", "src\UmbracoTemplate.Shared\UmbracoTemplate.Shared.csproj", "{3334785E-1EA6-4A7E-980B-C21C0CC7DE40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

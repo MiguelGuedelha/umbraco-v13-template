@@ -13,11 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UmbracoTemplate.Cms.GeneratedModels\UmbracoTemplate.Cms.GeneratedModels.csproj" />
+    <ProjectReference Include="..\UmbracoTemplate.Shared\UmbracoTemplate.Shared.csproj" />
     <ProjectReference Include="..\UmbracoTemplate.ServiceDefaults\UmbracoTemplate.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="uSync\v9\Templates\" />
     <Folder Include="wwwroot\media\" />
   </ItemGroup>
 
