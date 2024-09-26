@@ -2,7 +2,14 @@
   
   <ItemGroup>
     <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Cultiv.EnvironmentInspect" />
+    <PackageReference Include="Cultiv.Hangfire" />
+    <PackageReference Include="Diplo.AuditLogViewer" />
+    <PackageReference Include="Our.Umbraco.MaintenanceMode" />
+    <PackageReference Include="Skybrud.Umbraco.Redirects" />
+    <PackageReference Include="Skybrud.Umbraco.Redirects.Import" />
     <PackageReference Include="Umbraco.Cms"/>
+    <PackageReference Include="Umbraco.Community.Contentment" />
     <PackageReference Include="uSync" />
   </ItemGroup>
 

@@ -2,6 +2,7 @@
 
     <ItemGroup>
       <PackageReference Include="Umbraco.Cms" />
+      <PackageReference Include="Umbraco.Community.Contentment" />
     </ItemGroup>
 
 </Project>
