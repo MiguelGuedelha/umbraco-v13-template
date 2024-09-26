@@ -479,3 +479,5 @@ appsettings-schema.*.json
 /wwwroot/media/
 
 # Umbraco Packages
+/App_Plugins/Cultiv.EnvironmentInspect/
+/App_Plugins/DiploAuditLogViewer/
