@@ -1,3 +1,11 @@
+using MailKit.Net.Smtp;
+
+using Microsoft.Extensions.Options;
+
+using MimeKit;
+
+using Umbraco.Cms.Core.Configuration.Models;
+
 using UmbracoTemplate.Cms.Features.Navigation;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
