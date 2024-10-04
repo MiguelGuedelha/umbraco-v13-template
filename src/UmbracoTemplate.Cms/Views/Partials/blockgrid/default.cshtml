@@ -1,6 +1,9 @@
 ﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridModel>
 @{
-    if (Model?.Any() != true) { return; }
+    if (Model?.Any() != true)
+    {
+        return;
+    }
 }
 
 <div class="umb-block-grid"

@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  
+
   <PropertyGroup>
     <IsAspireSharedProject>true</IsAspireSharedProject>
     <RootNamespace>UmbracoTemplate.ServiceDefaults</RootNamespace>

@@ -9,8 +9,8 @@ var smtpPassword = builder.AddParameter("SmtpPassword", true);
 var smtpPort = builder.AddParameter("SmtpPort");
 
 var testMailServer = builder.AddContainer("mail-server", "rnwood/smtp4dev")
-    .WithHttpEndpoint(port: 34523, targetPort: 80, name: "ui")
-    .WithHttpEndpoint(port: int.Parse(smtpPort.Resource.Value), targetPort: 25, name: "smtp")
+    .WithHttpEndpoint(34523, 80, "ui")
+    .WithHttpEndpoint(int.Parse(smtpPort.Resource.Value), 25, "smtp")
     .WithVolume("UmbracoTemplate-smtp4dev-data", "/stmp4dev")
     .WithEnvironment("ServerOptions__AuthenticationRequired", "true")
     .WithEnvironment("ServerOptions__Users__0__Username", smtpUser)

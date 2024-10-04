@@ -9,7 +9,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Local",
         "USE_USER_SECRETS": "true"
-      }      
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
     .AddBackOffice()
@@ -7,15 +7,15 @@ builder.CreateUmbracoBuilder()
     .AddComposers()
     .Build();
 
-if (bool.TryParse(Environment.GetEnvironmentVariable("USE_USER_SECRETS"), out var useUserSecrets) 
+if (bool.TryParse(Environment.GetEnvironmentVariable("USE_USER_SECRETS"), out var useUserSecrets)
     && useUserSecrets)
 {
     builder.Configuration.AddUserSecrets<Program>();
 }
-    
+
 builder.AddServiceDefaults();
 
-WebApplication app = builder.Build();
+var app = builder.Build();
 
 await app.BootUmbracoAsync();
 

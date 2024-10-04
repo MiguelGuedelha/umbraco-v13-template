@@ -61,10 +61,11 @@
                             }
                         </div>
                     </div>
-                 }
+                }
             </div>
         </div>
     }
+
 }
 
 @functions{
@@ -76,7 +77,7 @@
 
         if (cfg != null)
         {
-            foreach (JProperty property in cfg.Properties())
+            foreach (var property in cfg.Properties())
             {
                 var propertyValue = HttpUtility.HtmlAttributeEncode(property.Value.ToString());
                 attrs.Add(property.Name + "=\"" + propertyValue + "\"");
@@ -85,9 +86,10 @@
 
         JObject style = contentItem.styles;
 
-        if (style != null) {
+        if (style != null)
+        {
             var cssVals = new List<string>();
-            foreach (JProperty property in style.Properties())
+            foreach (var property in style.Properties())
             {
                 var propertyValue = property.Value.ToString();
                 if (string.IsNullOrWhiteSpace(propertyValue) == false)
@@ -102,4 +104,5 @@
 
         return new HtmlString(string.Join(" ", attrs));
     }
+
 }
