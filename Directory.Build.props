@@ -5,7 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
-  <ItemGroup>
+  <!-- Add this to individual projects if they need to use aspnetcore types/definitions and can't at the moment -->
+  <!-- <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App"/>
-  </ItemGroup>
+  </ItemGroup> -->
 </Project>
